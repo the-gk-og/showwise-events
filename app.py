@@ -46,7 +46,7 @@ mail = Mail(app)
 _rate_store: dict[str, list[float]] = defaultdict(list)
 
 RATE_LIMIT        = 5     # max submissions per IP
-RATE_WINDOW       = 3600  # within this many seconds (1 hour)
+RATE_WINDOW       = 6000  # within this many seconds (1 hour)
 RATE_BLOCK_AFTER  = 10    # hard-block IP if they exceed this many attempts
 
 
