@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% block title %}Services — ShowWise Events{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+    <div class="container">
+        <div class="page-hero-inner">
+            <h1>Services</h1>
+            <p>Everything a production needs. All from people who've done it.</p>
+        </div>
+    </div>
+</section>
+
+<section class="service-block" id="consulting">
+    <div class="container">
+        <div class="service-block-inner">
+            <div class="service-block-label">01</div>
+            <div class="service-block-content">
+                <h2>AV Consulting</h2>
+                <p class="service-lead">Audio, lighting, and vision consulting for live productions, permanent installations, and theatre — anywhere in the world.</p>
+                <p>Whether you're spec'ing a new venue, designing a touring rig, or trying to figure out why your room sounds terrible — we can help. Our consultants have hands-on experience across corporate events, live music, theatre, houses of worship, and commercial installations.</p>
+                <ul class="service-features">
+                    <li>Live event system design &amp; specification</li>
+                    <li>Permanent AV installation consulting</li>
+                    <li>Theatre and performance venue consulting</li>
+                    <li>Site surveys and acoustic assessments</li>
+                    <li>Tender documentation and procurement support</li>
+                    <li>Worldwide remote and on-site consulting available</li>
+                </ul>
+                <a href="{{ url_for('contact') }}?service=consulting" class="btn btn--primary">Enquire About Consulting</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service-block service-block--alt" id="operators">
+    <div class="container">
+        <div class="service-block-inner">
+            <div class="service-block-label">02</div>
+            <div class="service-block-content">
+                <h2>Experienced Operators</h2>
+                <p class="service-lead">Skilled operators for lighting, vision, and audio — people who've done real shows in real venues under real pressure.</p>
+                <p>Operators make or break a show. We supply crew who aren't just technically competent — they've got the experience to read a room, adapt on the fly, and keep things running no matter what. Whether you need a single LD or a full production crew, we've got the people.</p>
+                <ul class="service-features">
+                    <li>Lighting Designers &amp; Operators (LD / LO)</li>
+                    <li>Audio Engineers (FOH &amp; Monitor)</li>
+                    <li>Vision / IMAG operators</li>
+                    <li>Production and Stage Management</li>
+                    <li>Short notice &amp; regular placement available</li>
+                </ul>
+                <a href="{{ url_for('contact') }}?service=operators" class="btn btn--primary">Request Operators</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service-block" id="management">
+    <div class="container">
+        <div class="service-block-inner">
+            <div class="service-block-label">03</div>
+            <div class="service-block-content">
+                <h2>Event Management &amp; Operations</h2>
+                <p class="service-lead">Full-service event management — from initial planning through bump-in to bump-out.</p>
+                <p>We handle the logistics so your team can focus on the event itself. From coordinating hire suppliers and crew through to on-the-day operations, we've got the systems and the network to keep everything moving.</p>
+                <ul class="service-features">
+                    <li>End-to-end production management</li>
+                    <li>Supplier coordination and scheduling</li>
+                    <li>Bump-in / bump-out supervision</li>
+                    <li>On-site event operations</li>
+                    <li>Risk and safety management support</li>
+                    <li>Post-event review and reporting</li>
+                </ul>
+                <a href="{{ url_for('contact') }}?service=management" class="btn btn--primary">Talk Events</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service-block service-block--alt" id="hire">
+    <div class="container">
+        <div class="service-block-inner">
+            <div class="service-block-label">04</div>
+            <div class="service-block-content">
+                <h2>Hire &amp; Supplier Connections</h2>
+                <p class="service-lead">We've built relationships with multiple reputable hire companies and production groups across the region.</p>
+                <p>Need gear but don't know who to call? We do. Our network of trusted hire partners means we can source the right equipment at the right price — and we know who'll actually look after you when things get complicated.</p>
+                <ul class="service-features">
+                    <li>Audio, lighting, and AV gear hire connections</li>
+                    <li>Staging, rigging, and structural referrals</li>
+                    <li>Multiple supplier options to suit budget &amp; scale</li>
+                    <li>Coordinated delivery and logistics support</li>
+                </ul>
+                <a href="{{ url_for('contact') }}?service=hire" class="btn btn--primary">Find the Right Gear</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-band">
+    <div class="container">
+        <div class="cta-band-inner">
+            <h2>Not sure what you need?</h2>
+            <p>Tell us about your event and we'll figure it out together.</p>
+            <a href="{{ url_for('contact') }}" class="btn btn--primary btn--lg">Get in Touch</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

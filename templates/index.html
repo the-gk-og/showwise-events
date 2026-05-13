@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% block title %}ShowWise Events — Live Events, AV & Consulting{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero-bg">
+        <div class="hero-grid"></div>
+    </div>
+    <div class="hero-inner">
+        <div class="hero-tag">Canberra ACT &amp; Worldwide</div>
+        <h1 class="hero-headline">
+            We Make<br>
+            <span class="hero-accent">Events Happen.</span>
+        </h1>
+        <p class="hero-sub">Audio. Lighting. Vision. Operations. From consulting rooms to stadium stages — ShowWise Events has you covered.</p>
+        <div class="hero-actions">
+            <a href="{{ url_for('contact') }}" class="btn btn--primary">Start a Conversation</a>
+            <a href="{{ url_for('services') }}" class="btn btn--ghost">Our Services</a>
+        </div>
+    </div>
+    <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<section class="intro">
+    <div class="container">
+        <div class="intro-grid">
+            <div class="intro-text">
+                <h2>Real experience.<br>Real results.</h2>
+                <p>ShowWise Events is the live-and-installed production arm of <a href="https://showwise.app" target="_blank">ShowWise</a> — a company built by people who've actually worked the floor, run the desk, and pulled off the impossible under pressure.</p>
+                <p>We bring industry connections, seasoned operators, and end-to-end management to every gig — small or massive.</p>
+                <a href="{{ url_for('about') }}" class="link-arrow">More about us →</a>
+            </div>
+            <div class="intro-stats">
+                <div class="stat">
+                    <span class="stat-num">ALV</span>
+                    <span class="stat-label">Audio · Lighting · Vision</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">ACT</span>
+                    <span class="stat-label">Based in Canberra &amp; surrounds</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">∞</span>
+                    <span class="stat-label">Worldwide consulting available</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-snap">
+    <div class="container">
+        <div class="section-header">
+            <h2>What We Do</h2>
+            <a href="{{ url_for('services') }}" class="link-arrow">Full services →</a>
+        </div>
+        <div class="snap-grid">
+            <a href="{{ url_for('services') }}#consulting" class="snap-card snap-card--1">
+                <div class="snap-icon">◈</div>
+                <h3>AV Consulting</h3>
+                <p>Live, installed, and theatre. We've seen every venue and know what works.</p>
+            </a>
+            <a href="{{ url_for('services') }}#operators" class="snap-card snap-card--2">
+                <div class="snap-icon">◉</div>
+                <h3>Experienced Operators</h3>
+                <p>Lighting, vision, and audio operators who know how to perform under pressure.</p>
+            </a>
+            <a href="{{ url_for('services') }}#management" class="snap-card snap-card--3">
+                <div class="snap-icon">◎</div>
+                <h3>Event Management</h3>
+                <p>Full operations. Logistics, crew, gear — we handle it so you can focus on the show.</p>
+            </a>
+            <a href="{{ url_for('services') }}#hire" class="snap-card snap-card--4">
+                <div class="snap-icon">◐</div>
+                <h3>Hire Connections</h3>
+                <p>We work with multiple trusted hire companies so you get the right gear, right price.</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="coverage">
+    <div class="container">
+        <div class="coverage-inner">
+            <div class="coverage-text">
+                <h2>Local roots,<br>global reach.</h2>
+                <p>We're based in Canberra and work events across the ACT and surrounding regions regularly. But consulting doesn't have borders — we've worked with clients and productions worldwide.</p>
+                <ul class="coverage-list">
+                    <li>Canberra &amp; ACT</li>
+                    <li>Regional NSW</li>
+                    <li>National touring</li>
+                    <li>International consulting</li>
+                </ul>
+                <a href="{{ url_for('contact') }}" class="btn btn--primary">Talk to us about your event</a>
+            </div>
+            <div class="coverage-visual">
+                <div class="coverage-ring ring-1"></div>
+                <div class="coverage-ring ring-2"></div>
+                <div class="coverage-ring ring-3"></div>
+                <div class="coverage-dot">ACT</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-band">
+    <div class="container">
+        <div class="cta-band-inner">
+            <h2>Got an event coming up?</h2>
+            <p>Whether it's a corporate gig, a festival, a theatre run, or an installed system — let's talk.</p>
+            <a href="{{ url_for('contact') }}" class="btn btn--primary btn--lg">Get in Touch</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

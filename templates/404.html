@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Page Not Found — ShowWise Events{% endblock %}
+
+{% block content %}
+<section class="page-hero" style="min-height: 70vh; display:flex; align-items:center;">
+    <div class="container">
+        <div class="page-hero-inner">
+            <div class="hero-tag">404</div>
+            <h1>Nothing here.</h1>
+            <p>That page doesn't exist. Maybe it moved, maybe it never did.</p>
+            <br>
+            <a href="{{ url_for('index') }}" class="btn btn--ghost" style="margin-top:16px;">Back to Home</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

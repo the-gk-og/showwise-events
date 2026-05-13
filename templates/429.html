@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Too Many Requests — ShowWise Events{% endblock %}
+
+{% block content %}
+<section class="page-hero" style="min-height: 70vh; display:flex; align-items:center;">
+    <div class="container">
+        <div class="page-hero-inner">
+            <div class="hero-tag">429</div>
+            <h1>Slow down.</h1>
+            <p>Too many requests from your connection. Please wait a while and try again,<br>
+            or email us directly at <a href="mailto:Events@showwise.app" style="color:var(--blue)">Events@showwise.app</a>.</p>
+            <br>
+            <a href="{{ url_for('index') }}" class="btn btn--ghost" style="margin-top:16px;">Back to Home</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

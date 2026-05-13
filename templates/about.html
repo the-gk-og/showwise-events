@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block title %}About — ShowWise Events{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+    <div class="container">
+        <div class="page-hero-inner">
+            <h1>About Us</h1>
+            <p>Built by event people, for event people.</p>
+        </div>
+    </div>
+</section>
+
+<section class="about-story">
+    <div class="container">
+        <div class="about-story-inner">
+            <div class="about-story-text">
+                <h2>The ShowWise story</h2>
+                <p>ShowWise started as a software company — building tools to help event professionals manage productions more efficiently at <a href="https://showwise.app" target="_blank">showwise.app</a>. But we're not just coders. We're people who've worked events.</p>
+                <p>ShowWise Events is the natural extension of that — the boots-on-the-ground arm where we take everything we know about events and apply it directly. We consult, we crew, we manage, we operate.</p>
+                <p>We're based in Canberra and work across the ACT and surrounding regions day-to-day, but our consulting practice takes us further — nationally and internationally when the work calls for it.</p>
+            </div>
+            <div class="about-story-aside">
+                <div class="about-aside-card">
+                    <div class="aside-icon">◈</div>
+                    <p>"We're people who've worked the floor, run the desk, and pulled off the impossible under pressure."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-values">
+    <div class="container">
+        <h2 class="section-title-centered">How we operate</h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <span class="value-num">—</span>
+                <h3>Straight talk</h3>
+                <p>We'll tell you what you actually need. Not what'll pad our invoice. If you're overspecing a room or underspecing a show, we'll say so.</p>
+            </div>
+            <div class="value-card">
+                <span class="value-num">—</span>
+                <h3>Real experience</h3>
+                <p>Our people have worked real productions in real venues. We're not guessing — we've done this.</p>
+            </div>
+            <div class="value-card">
+                <span class="value-num">—</span>
+                <h3>Reliable network</h3>
+                <p>We've spent years building relationships with the right hire companies and crew across the region. Those relationships mean you get looked after.</p>
+            </div>
+            <div class="value-card">
+                <span class="value-num">—</span>
+                <h3>Software-backed</h3>
+                <p>Being part of ShowWise means we think about process, documentation, and communication differently. It shows in how we run events.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-showwise">
+    <div class="container">
+        <div class="showwise-link-card">
+            <div class="showwise-link-text">
+                <h2>Part of the ShowWise family</h2>
+                <p>ShowWise Events sits alongside <a href="https://showwise.app" target="_blank">ShowWise</a> — a platform built for event management professionals. If you're running events at scale and want smarter software to back you up, check it out.</p>
+                <a href="https://showwise.app" target="_blank" class="btn btn--outline">Visit ShowWise →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-band">
+    <div class="container">
+        <div class="cta-band-inner">
+            <h2>Ready to work together?</h2>
+            <p>Tell us about your next event and let's see how we can help.</p>
+            <a href="{{ url_for('contact') }}" class="btn btn--primary btn--lg">Get in Touch</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% block title %}Contact — ShowWise Events{% endblock %}
+
+{% block extra_head %}
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+    <div class="container">
+        <div class="page-hero-inner">
+            <h1>Get in Touch</h1>
+            <p>Tell us about your event. We'll get back to you quickly.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Let's talk.</h2>
+                <p>Whether you've got a specific brief or you're still figuring out what you need — drop us a message and we'll have a real conversation about it.</p>
+
+                <div class="contact-details">
+                    <div class="contact-detail">
+                        <span class="contact-detail-label">Event Enquiries</span>
+                        <a href="mailto:Events@showwise.app">Events@showwise.app</a>
+                    </div>
+                    <div class="contact-detail">
+                        <span class="contact-detail-label">General Enquiries</span>
+                        <a href="mailto:info@showwise.app">info@showwise.app</a>
+                    </div>
+                    <div class="contact-detail">
+                        <span class="contact-detail-label">Location</span>
+                        <span>Canberra, ACT, Australia</span>
+                    </div>
+                    <div class="contact-detail">
+                        <span class="contact-detail-label">Coverage</span>
+                        <span>ACT, Regional NSW &amp; Worldwide Consulting</span>
+                    </div>
+                    <div class="contact-detail">
+                        <span class="contact-detail-label">Part of</span>
+                        <a href="https://showwise.app" target="_blank">ShowWise (showwise.app)</a>
+                    </div>
+                </div>
+
+                <div class="contact-services-list">
+                    <p class="contact-services-label">We can help with:</p>
+                    <ul>
+                        <li>AV &amp; Technical Consulting</li>
+                        <li>Operator Supply (Audio, Lighting, Vision)</li>
+                        <li>Event Management &amp; Operations</li>
+                        <li>Hire &amp; Supplier Connections</li>
+                        <li>Theatre &amp; Installed Systems</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact-form-wrap">
+                <form class="contact-form" method="POST" action="{{ url_for('contact') }}">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">What do you need?</label>
+                        <select id="service" name="service">
+                            <option value="">— Select a service —</option>
+                            <option value="consulting">AV / Technical Consulting</option>
+                            <option value="operators">Operators (Audio, Lighting, Vision)</option>
+                            <option value="management">Event Management &amp; Operations</option>
+                            <option value="hire">Hire &amp; Supplier Connections</option>
+                            <option value="other">Something else / Not sure</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tell us about your event</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Date, venue, scale, what you're trying to achieve — the more detail the better." required></textarea>
+                    </div>
+                    <div class="turnstile-wrap">
+                        <div class="cf-turnstile"
+                             data-sitekey="{{ turnstile_site_key }}"
+                             data-theme="dark"
+                             data-size="normal"></div>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Send Enquiry</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
